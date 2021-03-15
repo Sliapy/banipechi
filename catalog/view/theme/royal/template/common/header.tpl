@@ -91,7 +91,7 @@ display: none!important;
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <?php if ($royal_arrowup !=1) { ?>
-	<span class="visible-md visible-lg"><a href="#" class="scup"><i class="fa fa-angle-up active"></i></a></span>
+	<span class=""><a href="#" class="scup"><i class="fa fa-angle-up active"></i></a></span>
 	<?php } ?>
 <nav id="top">
 <div class="container nobackground">
