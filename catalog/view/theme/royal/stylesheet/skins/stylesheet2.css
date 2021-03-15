@@ -542,6 +542,9 @@ padding: 0 10px;
 .product-grid .product-thumb .caption {
 min-height: 0;
 }
+h1 {
+    font-size: 20px;
+}
 }
 .product-thumb .rating {
 padding-bottom: 10px;
