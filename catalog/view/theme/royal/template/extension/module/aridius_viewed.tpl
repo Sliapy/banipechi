@@ -125,7 +125,7 @@ rewindSpeed: <?php echo $rew_speed; ?>
 	<?php foreach ($products as $product) { ?>
 		<div class="product-layout changebr col-lg-3 col-md-3 col-sm-6 col-xs-12">
 		<div class="product-thumb transition">
-		<div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
+		<div class="image"><a href="<?php echo $product['href']; ?>"><img srcset="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20194%2069%27%2F%3E" src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="demilazyload img-responsive" /></a></div>
 		<div class="positionsticker">
 		<!-- special -->
 		<?php if ($royal_sticker_sale_product_auto !=1 && $product['special'] && $product['price_sticker'] != 0 ) { ?>

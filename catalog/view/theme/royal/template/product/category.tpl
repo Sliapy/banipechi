@@ -234,7 +234,7 @@ if ($thumb) { ?><div class="col-sm-10"><?php } else { ?><div class="col-sm-12"><
 <?php if ($thumb || $description) { ?>
 <div class="row desc-cat_top">
 <?php if ($thumb) { ?>
-<div class="col-sm-2"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class="img-thumbnail" /></div>
+<div class="col-sm-2"><img srcset="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20194%2069%27%2F%3E" src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class="demilazyload img-thumbnail" /></div>
 <?php } ?>
 <?php if ($description) { ?>
 <?php if ($royal_description_length !=1 && strlen($description) > 2200 ) {  
