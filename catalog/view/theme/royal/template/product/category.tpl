@@ -51,7 +51,7 @@ if ($thumb) { ?><div class="col-sm-10"><?php } else { ?><div class="col-sm-12"><
 	<?php foreach ($categories as $category) { ?>
 		<div class="cat_clear col-xs-6 col-sm-4 col-md-4 col-lg-3 catpr-all">
 		<?php if ($royal_categories_2lv !=1 && (!empty($category['thumb']))) { ?>		  
-			<a class="catpr" href="<?php echo $category['href']; ?>"><img src="<?php echo $category['thumb']; ?>" alt="<?php echo $category['name']; ?>" class="img-responsive opacityhv" /></a>
+			<a class="catpr" href="<?php echo $category['href']; ?>"><img srcset="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20194%2069%27%2F%3E" src="<?php echo $category['thumb']; ?>" alt="<?php echo $category['name']; ?>" class="img-responsive demilazyload opacityhv" /></a>
 			<?php } ?>			
 		<a class="catpr2" href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
 		</div>
@@ -121,9 +121,9 @@ if ($thumb) { ?><div class="col-sm-10"><?php } else { ?><div class="col-sm-12"><
 		<div class="image">
 			
 				<div id="dop-photo<?php echo $num; ?>" class="owl-carousel" style="display: block">
-					<div class="photo-pr"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
+					<div class="photo-pr"><a href="<?php echo $product['href']; ?>"><img srcset="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20194%2069%27%2F%3E" src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="demilazyload img-responsive" /></a></div>
                      <?php foreach ($product['images'] as $image) { ?>
-					    <div class="photo-pr"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $image['thumb']; ?>"></a></div>
+					    <div class="photo-pr"><a href="<?php echo $product['href']; ?>"><img srcset="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20194%2069%27%2F%3E" src="<?php echo $image['thumb']; ?>" class="demilazyload"></a></div>
 					  <?php } ?>
 				</div>	
 				

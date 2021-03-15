@@ -241,4 +241,128 @@ zIndex: 3});
 	google.maps.event.addDomListener(window, 'load', initialize);
 //--></script>
 	<?php } ?>
+<script>
+	lazyloader = {
+		options: {
+			//  root: false,
+			rootMargin: '100px 0px 100px 0px'
+
+		},
+		selector: '.demilazyload',
+		lazyImages: false,
+		observer: false,
+		container: null,
+		init: function() {
+			console.log('Lazy init start');
+			if (this.lazyImages && ('IntersectionObserver' in window)) {
+				lazyloader.unobserv();
+			}
+
+			//  this.options.root=document.querySelector(lazyloader.container);
+			this.lazyImages = [].slice.call(document.querySelectorAll(this.selector));
+
+			if ('IntersectionObserver' in window) {
+
+				this.observer = new IntersectionObserver(function(entries, observer) {
+					entries.forEach(function(entry) {
+
+						if (entry.isIntersecting) {
+
+							entry.target.classList.remove('demilazyload');
+							if ((entry.target.hasAttribute('data-srcsetoriginal'))) {
+
+
+								entry.target.setAttribute('srcset', entry.target.getAttribute('data-srcsetoriginal'));
+								lazyloader.observer.unobserve(entry.target);
+
+							} else {
+
+								if ((entry.target.hasAttribute('src'))) {
+
+									entry.target.removeAttribute('srcset');
+									// entry.target.setAttribute('srcset', entry.target.getAttribute('src'));
+									lazyloader.observer.unobserve(entry.target);
+
+								}
+							}
+
+							if ((entry.target.hasAttribute('data-youtube'))) {
+
+
+								entry.target.innerHTML = atob(entry.target.getAttribute("data-youtube"));
+
+								lazyloader.observer.unobserve(entry.target);
+
+							}
+							if ((entry.target.hasAttribute('data-bgoriginal'))) {
+
+								entry.target.style.backgroundImage = 'url("'+entry.target.getAttribute('data-bgoriginal')+'")';
+
+								lazyloader.observer.unobserve(entry.target);
+
+							}
+
+
+						}
+					});
+				}, this.options);
+
+				this.lazyImages.forEach(function(lazyImage) {
+					lazyloader.observer.observe(lazyImage);
+				});
+			} else {
+
+
+				this.lazyImages.forEach(function(entry) {
+
+					entry.classList.remove('demilazyload');
+					if ((entry.hasAttribute('data-srcsetoriginal'))) {
+
+
+						entry.setAttribute('srcset', entry.getAttribute('data-srcsetoriginal'));
+
+
+					} else {
+
+
+						if ((entry.hasAttribute('src'))) {
+
+
+							entry.removeAttribute('srcset');
+							//  entry.setAttribute('srcset', entry.getAttribute('src'));
+
+
+						}
+					}
+					if ((entry.hasAttribute('data-youtube'))) {
+
+						entry.innerHTML =  atob(entry.getAttribute("data-youtube"));
+
+
+
+					}
+					if ((entry.hasAttribute('data-bgoriginal'))) {
+
+
+
+						entry.style.backgroundImage = 'url("'+entry.getAttribute("data-bgoriginal")+'")';
+
+
+						// lazyloader.observer.unobserve(entry.target);
+
+					}
+
+				});
+
+			}
+		},
+		unobserv: function() {
+			lazyloader.lazyImages.forEach(function(lazyImage) {
+				lazyloader.observer.unobserve(lazyImage);
+			});
+		}
+	}
+
+	lazyloader.init();
+</script>
 </body></html>
