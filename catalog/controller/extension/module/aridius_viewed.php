@@ -20,8 +20,8 @@ class ControllerExtensionModuleAridiusViewed extends Controller {
 
 		$this->load->model('tool/image');
 		
-		$this->document->addStyle('catalog/view/theme/royal/js/jquery/owl-carousel/owl.carousel.css');
-		$this->document->addScript('catalog/view/theme/royal/js/jquery/owl-carousel/owl.carousel.min.js');
+		//$this->document->addStyle('catalog/view/theme/royal/js/jquery/owl-carousel/owl.carousel.css');
+		//$this->document->addScript('catalog/view/theme/royal/js/jquery/owl-carousel/owl.carousel.min.js');
 
 		$data['language_id'] = $this->config->get('config_language_id');
 		$data['royal_name_sticker_product_new'] = $this->config->get('royal_name_sticker_product_new');

@@ -21,8 +21,8 @@ class ControllerExtensionModuleAridiusFeatured extends Controller {
 
 		$this->load->model('tool/image');
 		
-		$this->document->addStyle('catalog/view/theme/royal/js/jquery/owl-carousel/owl.carousel.css');
-		$this->document->addScript('catalog/view/theme/royal/js/jquery/owl-carousel/owl.carousel.min.js');
+		//$this->document->addStyle('catalog/view/theme/royal/js/jquery/owl-carousel/owl.carousel.css');
+		//$this->document->addScript('catalog/view/theme/royal/js/jquery/owl-carousel/owl.carousel.min.js');
 
 		$data['products'] = array();
 
