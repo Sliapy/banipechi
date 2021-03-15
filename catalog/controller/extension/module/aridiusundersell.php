@@ -8,7 +8,7 @@ class ControllerExtensionModuleAridiusundersell extends Controller {
 			
 			$this->document->addStyle('catalog/view/theme/royal/stylesheet/aridiusundersell.css');	
 			$this->document->addScript('catalog/view/theme/royal/js/aridius/aridius_undersell.js');		
-            $this->document->addScript('catalog/view/theme/royal/js/aridius/jquery.maskedinput.js');				
+            //$this->document->addScript('catalog/view/theme/royal/js/aridius/jquery.maskedinput.js');
 
 			$data['button_title'] = $this->language->get('button_title');
 			$data['text_loading'] = $this->language->get('text_loading');

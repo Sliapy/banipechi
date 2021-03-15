@@ -2,8 +2,8 @@
 class ControllerCommonHeader extends Controller {
 	public function index() {
 
-            $this->document->addStyle('catalog/view/theme/default/devmanextensions/options_combinations/stylesheet/image-picker.css');
-            $this->document->addScript('catalog/view/theme/default/devmanextensions/options_combinations/javascript/image-picker.min.js');
+            //$this->document->addStyle('catalog/view/theme/default/devmanextensions/options_combinations/stylesheet/image-picker.css');
+            //$this->document->addScript('catalog/view/theme/default/devmanextensions/options_combinations/javascript/image-picker.min.js');
         
 		// Analytics
 		$this->load->model('extension/extension');

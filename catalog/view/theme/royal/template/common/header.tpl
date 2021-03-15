@@ -41,28 +41,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:site_name" content="<?php echo $name; ?>" />
 <script src="catalog/view/theme/royal/js/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
 <link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
-<script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-<link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
-
 <link href="catalog/view/theme/royal/stylesheet/skins/stylesheet<?php echo $royal_cssstyle; ?>.css" rel="stylesheet">
 <link href="catalog/view/theme/royal/stylesheet/skins/royal<?php echo $royal_cssstyle; ?>.css" rel="stylesheet">
-<link href="catalog/view/theme/royal/stylesheet/stickers.css" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
-<link href="catalog/view/theme/royal/js/jquery/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
-<script src="catalog/view/theme/royal/js/jquery/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
-<script src="catalog/view/theme/royal/js/wow.min.js" type="text/javascript"></script>
-<script src="catalog/view/javascript/jquery/magnific/jquery.magnific-popup.min.js" type="text/javascript"></script>
-<link href="catalog/view/javascript/jquery/magnific/magnific-popup.css" rel="stylesheet">
-<link href="catalog/view/theme/royal/stylesheet/animate.min.css" rel="stylesheet" type="text/css" />
 <?php foreach ($styles as $style) { ?>
 	<link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
 	<?php } ?>
-<script src="catalog/view/theme/royal/js/common.js" type="text/javascript"></script>
-<script src="catalog/view/theme/royal/js/aridius/aridiusquickview.js" type="text/javascript"></script>
+
 <?php foreach ($links as $link) { ?>
 	<link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
 	<?php } ?>
+	<script src="catalog/view/theme/royal/js/common.js" type="text/javascript"></script>
+
 <?php foreach ($scripts as $script) { ?>
 	<script src="<?php echo $script; ?>" type="text/javascript"></script>
 	<?php } ?>

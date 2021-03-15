@@ -6,9 +6,9 @@ class ControllerExtensionModuleAridiusinstock extends Controller {
 		if ($this->config->get('aridiusinstock_status')) {
 			
 			$this->language->load('extension/module/aridiusinstock');
-			$this->document->addStyle('catalog/view/theme/royal/stylesheet/aridiusinstock.css');	
-			$this->document->addScript('catalog/view/theme/royal/js/aridius/aridius_instock.js');		
-            $this->document->addScript('catalog/view/theme/royal/js/aridius/jquery.maskedinput.js');
+			//$this->document->addStyle('catalog/view/theme/royal/stylesheet/aridiusinstock.css');
+			//$this->document->addScript('catalog/view/theme/royal/js/aridius/aridius_instock.js');
+            //$this->document->addScript('catalog/view/theme/royal/js/aridius/jquery.maskedinput.js');
 			
 			$data['button_title'] = $this->language->get('button_title');
 			$data['text_loading'] = $this->language->get('text_loading');

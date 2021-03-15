@@ -5,15 +5,15 @@ class ControllerExtensionModulearidiuscallback extends Controller {
 
 			$this->language->load('extension/module/aridiuscallback');
 			
-			$this->document->addStyle('catalog/view/theme/royal/stylesheet/aridiuscallback.css');	
-			$this->document->addScript('catalog/view/theme/royal/js/aridius/aridius_callback.js');		
-            $this->document->addScript('catalog/view/theme/royal/js/aridius/jquery.maskedinput.js');				
-	     	$this->document->addScript('catalog/view/javascript/jquery/magnific/jquery.magnific-popup.min.js');
-			$this->document->addStyle('catalog/view/javascript/jquery/magnific/magnific-popup.css');
-			$this->document->addScript('catalog/view/javascript/jquery/datetimepicker/moment.js');
-			$this->document->addScript('catalog/view/javascript/jquery/datetimepicker/locale/'.$this->session->data['language'].'.js');
-			$this->document->addScript('catalog/view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js');
-			$this->document->addStyle('catalog/view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.css');
+			//$this->document->addStyle('catalog/view/theme/royal/stylesheet/aridiuscallback.css');
+			//$this->document->addScript('catalog/view/theme/royal/js/aridius/aridius_callback.js');
+            //$this->document->addScript('catalog/view/theme/royal/js/aridius/jquery.maskedinput.js');
+	     	//$this->document->addScript('catalog/view/javascript/jquery/magnific/jquery.magnific-popup.min.js');
+			//$this->document->addStyle('catalog/view/javascript/jquery/magnific/magnific-popup.css');
+			//$this->document->addScript('catalog/view/javascript/jquery/datetimepicker/moment.js');
+			//$this->document->addScript('catalog/view/javascript/jquery/datetimepicker/locale/'.$this->session->data['language'].'.js');
+			//$this->document->addScript('catalog/view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js');
+			//$this->document->addStyle('catalog/view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.css');
 			
 			$data['button_title'] = $this->language->get('button_title');
 			$data['text_loading'] = $this->language->get('text_loading');

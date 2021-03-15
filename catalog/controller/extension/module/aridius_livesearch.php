@@ -9,7 +9,7 @@ class ControllerExtensionModuleAridiusLivesearch extends Controller {
 	    $data['aridius_livesearch_symbol'] = $this->config->get('aridius_livesearch_symbol');
 		$data['aridius_livesearch_img'] = $this->config->get('aridius_livesearch_img');
 
-		$this->document->addStyle('catalog/view/theme/royal/stylesheet/aridius_livesearch.css');
+		//$this->document->addStyle('catalog/view/theme/royal/stylesheet/aridius_livesearch.css');
 
 		return $this->load->view('extension/module/aridius_livesearch', $data);
     }

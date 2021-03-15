@@ -3,8 +3,8 @@ class ControllerExtensionModuleAridiusletters extends Controller {
 	
 	public function index() {
 		
-		$this->document->addStyle('catalog/view/theme/royal/stylesheet/aridius_letters.css');	
-		$this->document->addScript('catalog/view/theme/royal/js/aridius/aridius_letters.js');		
+		//$this->document->addStyle('catalog/view/theme/royal/stylesheet/aridius_letters.css');
+		//$this->document->addScript('catalog/view/theme/royal/js/aridius/aridius_letters.js');
 			
 		$this->load->language('module/aridius_letters');
 

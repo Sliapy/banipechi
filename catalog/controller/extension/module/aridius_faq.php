@@ -5,7 +5,7 @@ class ControllerExtensionModuleAridiusFaq extends Controller {
 		
 		$this->load->language('module/aridius_faq');
 		
-		$this->document->addStyle('catalog/view/theme/royal/stylesheet/aridius_faq.css');	
+		//$this->document->addStyle('catalog/view/theme/royal/stylesheet/aridius_faq.css');
 
 		$data['heading_title'] = $this->language->get('heading_title');
 

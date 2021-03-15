@@ -5,7 +5,7 @@ class ControllerInformationAridiusFaq extends Controller {
 		
 		$this->load->language('extension/module/aridius_faq');
 		
-		$this->document->addStyle('catalog/view/theme/royal/stylesheet/aridius_faq.css');	
+		//$this->document->addStyle('catalog/view/theme/royal/stylesheet/aridius_faq.css');
 
 		$data['breadcrumbs'] = array();
 

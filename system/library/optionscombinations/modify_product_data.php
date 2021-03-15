@@ -1,7 +1,7 @@
 <?php
 if($product_id && $this->config->get('config_opt_comb_status')){
-    $this->document->addStyle('catalog/view/theme/default/devmanextensions/options_combinations/stylesheet/image-picker.css');
-    $this->document->addScript('catalog/view/theme/default/devmanextensions/options_combinations/javascript/image-picker.min.js');
+    //$this->document->addStyle('catalog/view/theme/default/devmanextensions/options_combinations/stylesheet/image-picker.css');
+    //$this->document->addScript('catalog/view/theme/default/devmanextensions/options_combinations/javascript/image-picker.min.js');
     if ($this->config->get('config_opt_comb_theme_generic')){
         $this->document->addStyle('catalog/view/theme/default/devmanextensions/options_combinations/stylesheet/tingle.min.css');
         $this->document->addScript('catalog/view/theme/default/devmanextensions/options_combinations/javascript/tingle.min.js');

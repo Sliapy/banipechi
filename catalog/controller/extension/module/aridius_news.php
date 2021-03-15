@@ -22,7 +22,7 @@ class ControllerExtensionModuleAridiusNews extends Controller {
 		$this->load->model('catalog/aridiusnews');
 		$this->load->model('tool/image');
 
-		$this->document->addStyle('catalog/view/theme/royal/stylesheet/aridius_news.css');
+		//$this->document->addStyle('catalog/view/theme/royal/stylesheet/aridius_news.css');
 				
 		$data['aridius_news_count'] = $this->model_catalog_aridiusnews->getTotalaridius_news();
 

@@ -10,7 +10,7 @@ class ControllerExtensionModuleAridiusNewsCategory extends Controller {
 		
         $data['aridius_newslist'] = $this->url->link('information/aridius_news');
 		
-		$this->document->addStyle('catalog/view/theme/royal/stylesheet/aridius_news_category.css');
+		//$this->document->addStyle('catalog/view/theme/royal/stylesheet/aridius_news_category.css');
 
 		$check=array();
 		$check = $setting['aridius_news_category2'];

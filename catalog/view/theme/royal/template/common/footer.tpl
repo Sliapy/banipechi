@@ -147,6 +147,42 @@
 </div>
 </div>
 </footer>
+<link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
+<link href="catalog/view/theme/royal/stylesheet/stickers.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
+<link href="catalog/view/theme/royal/js/jquery/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+<link href="catalog/view/theme/royal/js/jquery/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css" />
+<link href="catalog/view/theme/royal/stylesheet/animate.min.css" rel="stylesheet" type="text/css" />
+
+<link href="catalog/view/theme/royal/stylesheet/aridius_news_category.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="catalog/view/theme/royal/stylesheet/aridius_faq.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="catalog/view/theme/royal/stylesheet/aridiusinstock.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="catalog/view/theme/royal/stylesheet/aridius_livesearch.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="catalog/view/theme/royal/stylesheet/aridiuscallback.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="catalog/view/theme/royal/stylesheet/aridius_news.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="catalog/view/javascript/jquery/magnific/magnific-popup.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="catalog/view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="catalog/view/theme/royal/stylesheet/aridius_letters.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="catalog/view/theme/default/devmanextensions/options_combinations/stylesheet/image-picker.css" type="text/css" rel="stylesheet" media="screen" />
+
+
+<script src="catalog/view/theme/royal/js/aridius/aridius_instock.js" type="text/javascript"></script>
+<script src="catalog/view/theme/royal/js/aridius/aridius_callback.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/jquery/datetimepicker/moment.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/jquery/datetimepicker/locale/ru-ru.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+<script src="catalog/view/theme/royal/js/aridius/aridius_letters.js" type="text/javascript"></script>
+<script src="catalog/view/theme/default/devmanextensions/options_combinations/javascript/image-picker.min.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/jquery/yumenu/menuaim.js" type="text/javascript"></script>
+
+
+<script src="catalog/view/theme/royal/js/aridius/jquery.maskedinput.js" type="text/javascript"></script>
+<script src="catalog/view/theme/royal/js/jquery/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+<script src="catalog/view/theme/royal/js/aridius/aridiusquickview.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/jquery/magnific/jquery.magnific-popup.min.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="catalog/view/theme/royal/js/wow.min.js" type="text/javascript"></script>
 <!--WOW JS-->
 <script><!--
 new WOW().init();
