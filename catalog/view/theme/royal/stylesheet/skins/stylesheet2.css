@@ -519,7 +519,7 @@ float: left;
 }
 .product-thumb h4 {
 font-weight: 500;
-height: 33px;
+height: auto;
 }
 .product-thumb .caption {
 padding: 5px;
