@@ -71,7 +71,7 @@ body #top {
   <span class="hidden-xs catblock"><?php echo $title; ?></span>
   <span class="hidden-md hidden-lg hidden-sm catblock" style="display: flex;width: 125px;min-width: 125px;line-height: 1;padding-top: 5px;">
   <i style="margin-right: 8px;align-items: center;justify-content: center;display: flex;" class="fa fa-bars" aria-hidden="true"></i>
-  <img src="/image/fire.png" style="margin-right: 8px;max-height: 25px;margin-top: -11px;">БАНИ ПЕЧИ</span>
+  <img srcset="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20194%2069%27%2F%3E" class="demilazyload" src="/image/fire.png" style="margin-right: 8px;max-height: 25px;margin-top: -11px;">БАНИ ПЕЧИ</span>
 </div>
 
 
@@ -110,7 +110,7 @@ body #top {
               echo '>';
               if ($i != '1') {
                 if ($item['img']) {
-                  echo '<div class="iimage"><img src="'.$item['img'].'" alt="'.$item['title'].'" title="'.$item['title'].'" /></div>';
+                  echo '<div class="iimage"><img srcset="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20194%2069%27%2F%3E" class="demilazyload" src="'.$item['img'].'" alt="'.$item['title'].'" title="'.$item['title'].'" /></div>';
                 }
               }
               echo '<div class="ititle';
