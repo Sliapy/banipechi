@@ -1,6 +1,5 @@
 <script type="text/javascript" src="catalog/view/theme/royal/js/jquery/owl-carousel/owl.carousel.min.js"></script>
-<link href="catalog/view/theme/royal/js/jquery/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
-<link href="catalog/view/theme/royal/js/jquery/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css" />
+
 <div class="pagcolor">
 <div id="slideshow<?php echo $module; ?>" class="owl-carousel" style="opacity: 1;">
   <?php foreach ($banners as $banner) { ?>
