@@ -169,9 +169,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="logo">
 <?php if ($logo) { ?>
 	<?php if ($home == $og_url) { ?>
-		<img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" />
+		<img srcset="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20194%2069%27%2F%3E" src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="demilazyload img-responsive" />
 		<?php } else { ?>
-		<a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
+		<a href="<?php echo $home; ?>"><img srcset="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20194%2069%27%2F%3E" src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="demilazyload img-responsive" /></a>
 		<?php } ?>
 	<?php } else { ?>
 	<h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>

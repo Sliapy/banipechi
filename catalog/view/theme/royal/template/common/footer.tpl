@@ -137,7 +137,7 @@
 </div>
 <div class="col-sm-3">
 <?php if (!empty($footer_pay)) { ?>
-	<img class="img-responsive rigimg" alt="payment" title="payment" src="<?php echo $footer_pay; ?>">
+	<img srcset="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20194%2069%27%2F%3E" class="demilazyload img-responsive rigimg" alt="payment" title="payment" src="<?php echo $footer_pay; ?>">
 	<?php } ?>
 </div>
 <span class="col-sm-12 counter-footer">

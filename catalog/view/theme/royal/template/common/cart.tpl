@@ -1,6 +1,6 @@
 <div id="cart" class="btn-group btn-block">
 <button type="button" data-toggle="dropdown" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-inverse btn-block btn-lg dropdown-toggle">
-   <img id="frame2" class="img-responsive cartphotos" alt="cart" title="cart" src="<?php echo $body_background; ?>"> 
+   <img id="frame2" class="demilazyload img-responsive cartphotos" alt="cart" title="cart" srcset="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20194%2069%27%2F%3E" src="<?php echo $body_background; ?>">
   <span><span id="cart-total"><?php echo $text_items; ?></span>&nbsp;<span class="caret"></span></span></button>
   <ul class="dropdown-menu pull-right">
     <?php if ($products || $vouchers) { ?>
