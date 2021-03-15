@@ -167,6 +167,7 @@
 <link href="catalog/view/theme/default/devmanextensions/options_combinations/stylesheet/image-picker.css" type="text/css" rel="stylesheet" media="screen" />
 
 
+
 <script src="catalog/view/theme/royal/js/aridius/aridius_instock.js" type="text/javascript"></script>
 <script src="catalog/view/theme/royal/js/aridius/aridius_callback.js" type="text/javascript"></script>
 <script src="catalog/view/javascript/jquery/datetimepicker/moment.js" type="text/javascript"></script>
@@ -174,7 +175,7 @@
 <script src="catalog/view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
 <script src="catalog/view/theme/royal/js/aridius/aridius_letters.js" type="text/javascript"></script>
 <script src="catalog/view/theme/default/devmanextensions/options_combinations/javascript/image-picker.min.js" type="text/javascript"></script>
-<script src="catalog/view/javascript/jquery/yumenu/menuaim.js" type="text/javascript"></script>
+
 
 
 <script src="catalog/view/theme/royal/js/aridius/jquery.maskedinput.js" type="text/javascript"></script>

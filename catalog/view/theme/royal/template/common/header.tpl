@@ -44,17 +44,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link href="catalog/view/theme/royal/stylesheet/skins/stylesheet<?php echo $royal_cssstyle; ?>.css" rel="stylesheet">
 <link href="catalog/view/theme/royal/stylesheet/skins/royal<?php echo $royal_cssstyle; ?>.css" rel="stylesheet">
 <?php foreach ($styles as $style) { ?>
+
 	<link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
-	<?php } ?>
+
+<?php } ?>
 
 <?php foreach ($links as $link) { ?>
 	<link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
-	<?php } ?>
+<?php } ?>
 	<script src="catalog/view/theme/royal/js/common.js" type="text/javascript"></script>
 
 <?php foreach ($scripts as $script) { ?>
+
 	<script src="<?php echo $script; ?>" type="text/javascript"></script>
-	<?php } ?>
+
+<?php } ?>
 <?php foreach ($analytics as $analytic) { ?>
 	<?php echo $analytic; ?>
 	<?php } ?>
