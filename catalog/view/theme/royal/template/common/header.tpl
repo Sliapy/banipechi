@@ -95,22 +95,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<?php } ?>
 <nav id="top">
 <div class="container nobackground">
-<div id="addtocart" class="modal fade">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-</div>
-<div class="modal-body">
-<p></p>
-</div>
-<div class="modal-footer">
-<button type="button" class="btn-cart" data-dismiss="modal"><?php echo $text_continue; ?></button>
-<a href="<?php echo $checkout; ?>" class="btn-cart"><?php echo $text_checkout; ?></a>
-</div>
-</div>
-</div>
-</div>
+
 <div id="wishlist" class="modal fade">
 <div class="modal-dialog">
 <div class="modal-content">
@@ -226,6 +211,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 </div>
 </header>
+<div id="addtocart" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<p></p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn-cart" data-dismiss="modal"><?php echo $text_continue; ?></button>
+				<a href="<?php echo $checkout; ?>" class="btn-cart"><?php echo $text_checkout; ?></a>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="top-menu">
 <div id="top-menu" <?php if ($royal_sticky_menu !=1) { ?> data-spy="affix" data-offset-top="208" <?php } ?>>
 <div class="container nobackground">
