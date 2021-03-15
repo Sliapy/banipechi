@@ -9,9 +9,9 @@
     <div class="visible-md visible-lg"><?php echo htmlspecialchars_decode($banner['description']);?></div>
   <?php } ?>
     <?php if ($banner['link']) { ?>
-    <a href="<?php echo $banner['link']; ?>"><img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" class="img-responsive scaleslide" /></a>
+    <a href="<?php echo $banner['link']; ?>"><img srcset="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20194%2069%27%2F%3E" src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" class="demilazyload img-responsive scaleslide" /></a>
     <?php } else { ?>
-    <img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" class="img-responsive scaleslide" />
+    <img srcset="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20194%2069%27%2F%3E" src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" class="demilazyload img-responsive scaleslide" />
     <?php } ?>
   </div>
   <?php } ?>
