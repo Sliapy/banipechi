@@ -94,10 +94,10 @@
 <h5><?php echo $text_account; ?></h5>
 <ul class="list-unstyled">
 <?php if ($royal_account_footer !=1) { ?><li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li><?php } ?>
-<?php if ($royal_order_footer !=1) { ?><li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li><?php } ?>
-<?php if ($royal_wishlist_footer !=1) { ?><li><a href="<?php echo $wishlist; ?>"><?php echo $text_wishlist; ?></a></li><?php } ?>
-<?php if ($royal_newsletter_footer !=1) { ?><li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li><?php } ?>
-<?php if ($royal_return_footer !=1) { ?><li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li><?php } ?>
+<?php if ($royal_order_footer !=1) { ?><!-- <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li> --><?php } ?>
+<?php if ($royal_wishlist_footer !=1) { ?><!-- <li><a href="<?php echo $wishlist; ?>"><?php echo $text_wishlist; ?></a></li> --><?php } ?>
+<?php if ($royal_newsletter_footer !=1) { ?><!-- <li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li> --><?php } ?>
+<?php if ($royal_return_footer !=1) { ?><li><!-- <a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li> --><?php } ?>
 </ul>
 </div>
 <div class="col-sm-3">
