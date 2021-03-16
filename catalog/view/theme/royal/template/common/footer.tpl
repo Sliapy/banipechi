@@ -147,10 +147,10 @@
 </div>
 </div>
 </footer>
-<link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
+<link rel="preload" as="style" href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" onload="this.rel='stylesheet'" />
+<link href="https:////fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700&display=swap" rel="stylesheet" type="text/css" />
 <link href="catalog/view/theme/royal/stylesheet/stickers.css" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap' rel='stylesheet' type='text/css'>
 <link href="catalog/view/theme/royal/js/jquery/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
 <link href="catalog/view/theme/royal/js/jquery/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css" />
 <link href="catalog/view/theme/royal/stylesheet/animate.min.css" rel="stylesheet" type="text/css" />
@@ -165,6 +165,7 @@
 <link href="catalog/view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet" media="screen" />
 <link href="catalog/view/theme/royal/stylesheet/aridius_letters.css" type="text/css" rel="stylesheet" media="screen" />
 <link href="catalog/view/theme/default/devmanextensions/options_combinations/stylesheet/image-picker.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="catalog/view/theme/default/stylesheet/articles.css" rel="stylesheet">
 
 
 
@@ -402,4 +403,23 @@ zIndex: 3});
 
 	lazyloader.init();
 </script>
+<!-- Begin Talk-Me {literal} -->
+<script type='text/javascript'>
+	setTimeout(function(){
+		(function(d, w, m) {
+			window.supportAPIMethod = m;
+			var s = d.createElement('script');
+			s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
+			s.async = true;
+			var id = '430ff32235164d7df17477069aeca656';
+			s.src = '//lcab.talk-me.ru/support/support.js?h='+id;
+			var sc = d.getElementsByTagName('script')[0];
+			w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
+			if (sc) sc.parentNode.insertBefore(s, sc);
+			else d.documentElement.firstChild.appendChild(s);
+		})(document, window, 'TalkMe');
+	}, 1500);
+
+</script>
+<!-- {/literal} End Talk-Me -->
 </body></html>

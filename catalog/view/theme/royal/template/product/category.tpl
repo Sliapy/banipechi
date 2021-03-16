@@ -51,7 +51,7 @@ if ($thumb) { ?><div class="col-sm-10"><?php } else { ?><div class="col-sm-12"><
 	<?php foreach ($categories as $category) { ?>
 		<div class="cat_clear col-xs-6 col-sm-4 col-md-4 col-lg-3 catpr-all">
 		<?php if ($royal_categories_2lv !=1 && (!empty($category['thumb']))) { ?>		  
-			<a class="catpr" href="<?php echo $category['href']; ?>"><img srcset="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20194%2069%27%2F%3E" src="<?php echo $category['thumb']; ?>" alt="<?php echo $category['name']; ?>" class="img-responsive demilazyload opacityhv" /></a>
+			<a class="catpr" href="<?php echo $category['href']; ?>"><img src="<?php echo $category['thumb']; ?>" alt="<?php echo $category['name']; ?>" class="img-responsive opacityhv" /></a>
 			<?php } ?>			
 		<a class="catpr2" href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
 		</div>

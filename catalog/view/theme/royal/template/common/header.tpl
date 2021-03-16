@@ -41,12 +41,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:site_name" content="<?php echo $name; ?>" />
 <script src="catalog/view/theme/royal/js/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
 <link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
-<link href="catalog/view/theme/royal/stylesheet/skins/stylesheet<?php echo $royal_cssstyle; ?>.css" rel="stylesheet">
-<link href="catalog/view/theme/royal/stylesheet/skins/royal<?php echo $royal_cssstyle; ?>.css" rel="stylesheet">
+<link href="catalog/view/theme/royal/stylesheet/skins/stylesheet2.min.css" rel="stylesheet">
 <?php foreach ($styles as $style) { ?>
+	<?php if (strpos($style['href'], 'pm.css') == false && strpos($style['href'], 'hm.css') == false) { ?>
 
 	<link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
+	<?php } else { ?>
 
+	<?php } ?>
 <?php } ?>
 
 <?php foreach ($links as $link) { ?>
@@ -162,9 +164,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="logo">
 <?php if ($logo) { ?>
 	<?php if ($home == $og_url) { ?>
-		<img srcset="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20194%2069%27%2F%3E" src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="demilazyload img-responsive" />
+		<img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" />
 		<?php } else { ?>
-		<a href="<?php echo $home; ?>"><img srcset="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20194%2069%27%2F%3E" src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="demilazyload img-responsive" /></a>
+		<a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
 		<?php } ?>
 	<?php } else { ?>
 	<h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
@@ -297,20 +299,5 @@ $(function () {
 })
 //--></script>
 
-<!-- Begin Talk-Me {literal} -->
-<script type='text/javascript'>
-	(function(d, w, m) {
-		window.supportAPIMethod = m;
-		var s = d.createElement('script');
-		s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
-		s.async = true;
-		var id = '430ff32235164d7df17477069aeca656';
-		s.src = '//lcab.talk-me.ru/support/support.js?h='+id;
-		var sc = d.getElementsByTagName('script')[0];
-		w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
-		if (sc) sc.parentNode.insertBefore(s, sc); 
-		else d.documentElement.firstChild.appendChild(s);
-	})(document, window, 'TalkMe');
-</script>
-<!-- {/literal} End Talk-Me -->
+
 
