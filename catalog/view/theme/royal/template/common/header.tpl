@@ -184,11 +184,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="b-dropdown-contacts__phone-item"> <div class="b-dropdown-contacts__operator-item b-dropdown-contacts__operator-item_lif"></div> <div class="b-dropdown-contacts__phone"><a href="tel:+375255075407"><span>8 (025)</span> 507-54-07</a></div></div>
     </div>
    <div class="b-dropdown-contacts__right">
-   <div class="b-dropdown-contacts__phone-item"> <div class="b-dropdown-contacts__operator-item b-dropdown-contacts__operator-item_phone"></div> <div class="b-dropdown-contacts__phone1"><?php if ($aridiuscallback_status && $royal_calltop !=1) { ?>
-		<a class = "call-order"><?php echo $button_title; ?></a>
-		<?php } ?></div></div>
+   <div class="b-dropdown-contacts__phone-item">
+	   <div class="b-dropdown-contacts__operator-item b-dropdown-contacts__operator-item_phone"></div>
+	   <div class="b-dropdown-contacts__phone1">
+		   <a href="tel:+375175123283"><span>8(017)</span> 512-32-83</a>
+		</div>
+   </div>
         
         <div class="b-dropdown-contacts__phone-item"> <div class="b-dropdown-contacts__operator-item b-dropdown-contacts__operator-item_life"></div> <div class="b-dropdown-contacts__phone1"><?php echo $royal_worktime[$language_id]; ?></div></div>
+	   <div class="b-dropdown-contacts__phone-item">
+	   <div class="b-dropdown-contacts__operator-item b-dropdown-contacts__operator-item_phone email"></div>
+	   <div class="b-dropdown-contacts__phone1">
+		   <a href="mailto:190964-25@mail.ru">190964-25@mail.ru</a>
+		</div>
+   </div>
+
     
    </div>
     </div>
@@ -298,6 +308,3 @@ $(function () {
 	document.body.addEventListener('resize', onResize);
 })
 //--></script>
-
-
-
