@@ -2624,6 +2624,9 @@ footer .list-unstyled li ,footer .list-unstyled li a {
 .rewardoff{
     color: #D5333E;
 }
+.container > .row > .alert-success img.infoimg {
+    display: none;
+}
 /* max-width:768px */
 @media(max-width:767px){
     .opacityhv {
