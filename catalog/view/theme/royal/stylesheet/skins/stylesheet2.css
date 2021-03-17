@@ -2865,6 +2865,17 @@ footer .list-unstyled li ,footer .list-unstyled li a {
         margin-left: 45px;
     }
 }
+@media (max-width: 500px) {
+    .checkout-checkout #d_quickcheckout .input-group-btn:last-child {
+        display: block;
+        float: left;
+        margin-top: 10px;
+    }
+    .checkout-checkout #d_quickcheckout .input-group-btn:last-child > .btn {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+}
 @media (max-width: 992px) {
     #menu .nav > li.activetopmenu > a {
         background: #c73200;

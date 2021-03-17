@@ -78,7 +78,7 @@
 								<span class="input-group-btn">
 									<button class="btn btn-primary increase hidden-xs" data-product="<%= product.key %>"><i class="fa fa-chevron-up"></i></button>
 								
-									<button class="btn btn-danger delete hidden-xs" data-product="<%= product.key %>"><i class="fa fa-times"></i></button>
+									<button class="btn btn-danger delete" data-product="<%= product.key %>"><i class="fa fa-times"></i></button>
 								</span>
 							</div>
 						</td>
