@@ -2873,6 +2873,10 @@ footer .list-unstyled li ,footer .list-unstyled li a {
     .hidev{
         display: none!important;
     }
+    .container-circle {
+        left: 10px;
+        bottom: -10px;
+    }
     .circle {
         animation: spinfon 1.4s infinite linear;
         -moz-animation: spinfon 1.4s infinite ease-in-out;
@@ -2890,14 +2894,14 @@ footer .list-unstyled li ,footer .list-unstyled li a {
         background-color: #A2B8A4;
         border-radius: 55px;
         color: #fff;
-        font-size: 15px;
-        line-height: 33px;
-        height: 35px;
+        font-size: 23px;
+        line-height: 43px;
+        height: 45px;
         margin: 0 auto;
         text-align: center;
         position: relative;
-        top: -32px;
-        width: 35px;
+        top: -39px;
+        width: 45px;
     }
     .image_main {
         display: none;
