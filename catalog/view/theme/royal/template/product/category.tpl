@@ -176,19 +176,24 @@ if ($thumb) { ?><div class="col-sm-10"><?php } else { ?><div class="col-sm-12"><
 			</div>
 			<?php } ?>				
 		<?php if ($product['price']) { ?>
+			<?php if ($product['price'] !== '0.00 р.') { ?>
 			<p class="price">
 			<?php if (!$product['special']) { ?>
 				<?php echo $product['price']; ?>
-				<?php } else { ?>
+			<?php } else { ?>
 				<span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
-				<?php } ?>
+			<?php } ?>
 			<?php if ($product['tax']) { ?>
 				<span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
-				<?php } ?>
-			</p>
 			<?php } ?>
+			</p>
+			<?php } else { ?>
+				<p class="zeroprice">Цену уточняйте</p>
+			<?php } ?>
+
+		<?php } ?>
 		<div class="cart">
-		<?php if ($product['quantity'] <= 0 && $aridiusinstock_status ) { ?>
+		<?php if ($product['quantity'] <= 0 && $aridiusinstock_status || $product['price'] == '0.00 р.') { ?>
 			<button type="button" class="btn-instock" onclick="instock.add('<?php echo $product['product_id']; ?>');" data-product-id="<? echo $product['product_id']; ?>"><?php echo $button_instock; ?></button>
 			<?php } else { ?>
 			<button type="button" class="btn-cart" onclick="cart.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-shopping-cart"></i> <?php echo $button_cart; ?></button>

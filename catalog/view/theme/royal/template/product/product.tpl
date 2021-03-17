@@ -176,7 +176,7 @@
 </div>
 <?php } ?>
 <hr>
-<?php if ($price) { ?>
+<?php if ($price && $price !== '<span class=\'autocalc-product-price\'>0.00 р.</span>') { ?>
 	<div class="line-product">       
 	<?php if (!$special) { ?>
 		<span class="priceproduct-new"><?php echo $price; ?></span>
@@ -203,6 +203,8 @@
 			<?php } ?>
 		<?php } ?>
 	</ul>
+<?php } else { ?>
+	<p class="zeroprice" style="font-size: 18px;margin-top: 10px;">Цену уточняйте</p>
 <?php } ?>
 <div id="product">
             <?php if ($options) { ?>
@@ -363,7 +365,7 @@
 	<?php } ?>
 <div class="clearfix"></div><br />
 <div class="cart pull-left" >
-<?php if ($quantity <= 0 && $aridiusinstock_status ) { ?>
+<?php if ($quantity <= 0 && $aridiusinstock_status || $price == '<span class=\'autocalc-product-price\'>0.00 р.</span>') { ?>
 	<button type="button" class="btn-instock" onclick="instock.add('<?php echo $product_id; ?>');" data-product-id="<?php echo $product_id; ?>"><?php echo $button_instock; ?></button>
 	<?php } else { ?>
 	<button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn-cart"><i class="fa fa-shopping-cart"></i> <?php echo $button_cart; ?></button>

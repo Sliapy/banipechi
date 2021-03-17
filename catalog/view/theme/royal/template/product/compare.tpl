@@ -45,13 +45,17 @@
           <tr>
             <td><?php echo $text_price; ?></td>
             <?php foreach ($products as $product) { ?>
-            <td><?php if ($product['price']) { ?>
+            <td>
+              <?php if ($product['price'] && $product['price'] !== '0.00 р.') { ?>
               <?php if (!$product['special']) { ?>
               <?php echo $product['price']; ?>
               <?php } else { ?>
               <strike><?php echo $product['price']; ?></strike> <?php echo $product['special']; ?>
               <?php } ?>
-              <?php } ?></td>
+              <?php } else { ?>
+              <p class="zeroprice">Цену уточняйте</p>
+              <?php } ?>
+            </td>
             <?php } ?>
           </tr>
           <tr>
@@ -132,7 +136,7 @@
           <td></td>
           <?php foreach ($products as $product) { ?>
 		 <td>
-		    <?php if ($product['quantity'] <= 0 && $aridiusinstock_status ) { ?>
+		    <?php if ($product['quantity'] <= 0 && $aridiusinstock_status || $product['price'] == '0.00 р.') { ?>
 			<button type="button" class="btn-instock2 btn-block" onclick="instock.add('<?php echo $product['product_id']; ?>');" data-product-id="<? echo $product['product_id']; ?>"><?php echo $button_instock; ?></button>
 			<a href="<?php echo $product['remove']; ?>" class="btn btn-danger btn-block"><?php echo $button_remove; ?></a>
 			<?php } else { ?>

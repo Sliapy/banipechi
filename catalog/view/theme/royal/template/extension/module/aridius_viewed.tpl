@@ -159,7 +159,7 @@ rewindSpeed: <?php echo $rew_speed; ?>
 			echo mb_substr( $product['name'],0,$royal_limit_symbolst,'utf-8' )."..."; }
 		?>
 		</a></h4>
-		<?php if ($product['price']) { ?>
+		<?php if ($product['price'] && $product['price'] !== '0.00 р.') { ?>
 			<?php if (!$product['special']) { ?>
 				<p class="price" >
 				<?php echo $product['price']; ?>
@@ -171,7 +171,9 @@ rewindSpeed: <?php echo $rew_speed; ?>
 				<span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
 				<?php } ?>
 			</p>
-			<?php } ?>
+		<?php } else { ?>
+			<p class="zeroprice">Цену уточняйте</p>
+		<?php } ?>
 		</div>
 		<div class="cart">
 		<button type="button" class="btn-cart" onclick="cart.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-shopping-cart"></i> <?php echo $button_cart; ?></button>

@@ -37,18 +37,22 @@
 		echo mb_substr( $product['name'],0,$royal_limit_symbolst,'utf-8' )."..."; } 
 	?>
 	</a></h4>
-	<?php if ($product['price']) { ?>
-		<?php if (!$product['special']) { ?>
-			<p class="price" >
+		<?php if ($product['price']) { ?>
+		<?php if ($product['price'] !== '0.00 р.') { ?>
+		<p class="price">
+			<?php if (!$product['special']) { ?>
 			<?php echo $product['price']; ?>
 			<?php } else { ?>
-			<p class="price" style="margin-bottom:0px;">
-			<span class="price-new"><?php echo $product['special']; ?></span><br /> <span class="price-old"><?php echo $product['price']; ?></span>
+			<span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
 			<?php } ?>
-		<?php if ($product['tax']) { ?>
+			<?php if ($product['tax']) { ?>
 			<span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
 			<?php } ?>
 		</p>
+		<?php } else { ?>
+		<p class="zeroprice">Цену уточняйте</p>
+		<?php } ?>
+
 		<?php } ?>
 	</div>
 	<div class="cart">
