@@ -197,6 +197,8 @@ Please donate via PayPal to donate@opencart.com
 <!--код tooltip-->
 <script><!--
 $(document).ready(function(){
+
+	$('#yumenu-3 ul').clone().addClass('hidden-md hidden-lg hidden-xl').appendTo('#yumenu-2 > .icontent');
 	$(".tooltip-examples a").tooltip();
 	$(".tooltip-examples button").tooltip();
 });
